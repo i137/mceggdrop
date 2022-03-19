@@ -3,10 +3,14 @@ CBC FUNCTIONS v1.0 README
 
 INSTALL
 =======
-Copy the /lib dir to your /eggdrop/lib dir
-Copy the cbc_functions.tcl file to your /eggdrop/scripts dir
-Load the script in eggdrop.conf
-    ex.: source scripts/cbc_functions.tcl
+1. Install the tcllib package:
+   sudo apt install tcllib
+2. Copy the lib dir to your eggdrop dir
+3. Link mt_rand's random dir inside /usr/lib:
+   sudo ln -s eggdrop/lib/random /usr/lib/
+4. Copy the cbc_functions.tcl file to your eggdrop/scripts dir
+5. Load the script in eggdrop.conf below tcleggdrop_mcpsfuncs.tcl:
+   source scripts/cbc_functions.tcl
 
 GENERAL USAGE
 =============
